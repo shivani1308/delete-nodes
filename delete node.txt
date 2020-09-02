@@ -1,0 +1,28 @@
+deletion :
+
+
+at beginning:
+temp = head;
+head = head --> next;
+temp --> next = NULL;
+
+
+
+at ending :
+temp = head;
+while(temp --> next != tail)
+{
+temp = temp --> next ;
+}
+temp --> nex = NULL;
+tail = temp;
+ 
+ 
+ 
+ specific position:
+ scanf("%d",&pos); //example pos =2 
+ temp = head ;
+ for (i=0;i<pos-1;i++)
+ temp = temp --> next;
+ temp --> next = temp --> next --> next ;
+ 
